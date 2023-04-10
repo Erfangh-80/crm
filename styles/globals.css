@@ -1,8 +1,8 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  background-color: #989797;
-  max-width: 1200px;
+  background-color: #000;
+  max-width: 1000px;
   margin: auto;
   padding: 10px;
 }
@@ -22,7 +22,7 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: white;
+  color: #fff;
   margin: 20px 0 40px;
 }
 
@@ -53,7 +53,7 @@ a {
 
 .card {
   background-color: #262836;
-  color: #57aac8;
+  color: #fff;
   margin: 10px 0;
   padding: 20px 10px;
   border-radius: 5px;
@@ -77,6 +77,12 @@ a {
   margin-left: 15px;
   border-radius: 5px;
   cursor: pointer;
+  transition: background 250ms ease;
+}
+
+.card__buttons button:hover {
+  background-color: #c7505c;
+  color: #aeaeae;
 }
 
 .card__buttons a {
@@ -87,6 +93,12 @@ a {
   margin-left: 15px;
   border-radius: 5px;
   font-weight: 200;
+  transition: background 250ms ease;
+}
+
+.card__buttons a:hover {
+  background-color: #40975c;
+  color: #fff;
 }
 
 .form-input {
@@ -104,7 +116,7 @@ a {
   background-color: #262836;
   border: none;
   border-radius: 5px;
-  padding: 20px;
+  padding: 10px;
   color: white;
   font-size: 1rem;
   outline: none;
@@ -135,9 +147,20 @@ h4 {
   border-radius: 5px;
   width: 100%;
   margin-top: 50px;
-  padding: 15px;
+  padding: 10px;
   font-size: 1.1rem;
   cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.item-list .add_item:hover {
+  background-color: #40975c;
+  color: #fff;
+}
+
+.item-list .remove__product:hover {
+  background-color: #c7505c;
+  color: #aeaeae;
 }
 
 .form-input__list {
@@ -150,6 +173,12 @@ h4 {
 .form-input__list div {
   display: flex;
   justify-content: space-between;
+}
+
+.btn__delete {
+  border: 1px solid #f0394b;
+  color: #f0394b;
+  padding: 5px;
 }
 
 .form-input__list button {
@@ -165,26 +194,38 @@ h4 {
   margin-bottom: 50px;
 }
 
-.customer-page__buttons .first {
+.customer-page__buttons .cancel {
   color: #f0394b;
   background-color: black;
-  border: 3px solid #f0394b;
+  border: 1px solid #f0394b;
   border-radius: 5px;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.1rem;
-  padding: 10px 30px;
+  padding: 10px 16px;
   cursor: pointer;
+  transition: background 200ms ease;
 }
 
-.customer-page__buttons .second {
+.customer-page__buttons .cancel:hover {
+  background-color: #c7505c;
+  color: #aeaeae;
+}
+
+.customer-page__buttons .save {
   color: #8af1aa;
   background-color: black;
-  border: 3px solid #8af1aa;
+  border: 1px solid #8af1aa;
   border-radius: 5px;
-  font-weight: bold;
+  font-weight: 600;
   font-size: 1.1rem;
-  padding: 10px 30px;
+  padding: 10px 20px;
   cursor: pointer;
+  transition: background 200ms ease;
+}
+
+.customer-page__buttons .save:hover {
+  background-color: #40975c;
+  color: #ffffff;
 }
 
 .customer-detail {
@@ -207,7 +248,7 @@ h4 {
 
 .customer-detail__item span {
   color: #57aac8;
-  margin-right: 5px;
+  margin-left: 5px;
 }
 
 .customer-detail__products {
@@ -244,6 +285,12 @@ h4 {
   cursor: pointer;
   font-size: 1.1rem;
   width: 100px;
+  transition: all 300ms ease;
+}
+
+.customer-detail__buttons button:hover {
+  background-color: #c7505c;
+  color: #aeaeae;
 }
 
 .customer-detail__buttons a {
@@ -256,6 +303,12 @@ h4 {
   font-size: 1.1rem;
   width: 100px;
   text-align: center;
+  transition: all 300ms ease;
+}
+
+.customer-detail__buttons a:hover {
+  background-color: #40975c;
+  color: #fff;
 }
 
 @media (max-width: 600px) {
