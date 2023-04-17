@@ -1,9 +1,10 @@
+"use client"
 import CustomerDetail from "@/components/template/CustomerDetail";
 import axios from "axios";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-const customerDetail = () => {
+const CustomerDetails = () => {
   const [data, setData] = useState(null);
 
   const router = useRouter();
@@ -23,4 +24,4 @@ const customerDetail = () => {
   if (data) return <CustomerDetail data={data.data}/>;
 };
 
-export default customerDetail;
+export default CustomerDetails;
